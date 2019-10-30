@@ -37,19 +37,20 @@ function exampleFunction(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject() {
-  name: 'Jeff'
-  id: 42
-  email: 'jeff@jeff.com'
+function makePersonObject(id, name, email) {
+  return {
+      id: id,
+    name: name,
+    email: email
+  };
 }
-makePersonObject();
 
 /**
  * ### Challenge `getName`
  *
  * @instructions
- * This function takes as its only argument
- * an object containing a `name` property,
+ * This function takes an object as its only argument
+ * containing a `name` property,
  * and return a string that reads `Hello, my name is {name}`,
  * where `{name}` is the name stored in the object.
  *
@@ -57,8 +58,8 @@ makePersonObject();
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(person) {
+  return `Hello, my name is ${person.name}`;
 }
 
 /**
