@@ -116,14 +116,9 @@ function getCarInfoByIndex(arr, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(arr) {
-  function getLastCarInfo(arr) {
-    const lastIndex = arr;
-    const lastCar = arr.length - 1;
-    return `This is a ${lastCar.car_make} ${lastCar.car_model}`;
-  }
-}
+function getLastCarInfo() {
 
+}
 /**
  * ### Challenge `getCarInfoById`
  *
@@ -136,11 +131,8 @@ function getLastCarInfo(arr) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(arr, id) {
-  const carArray = arr;
-  const index = index;
-  const car = ''
-  for (let i = 0, i < carArray.length - 1, i++);
+function getCarInfoById(arr,id) {
+  car_
 }
 
 /**
@@ -164,10 +156,9 @@ function sortCarInventory(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
-}
+function getModelYears() {
 
+}
 /**
  * ### Challenge `getOlderCars`
  *
@@ -180,8 +171,8 @@ function getModelYears(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars( {
+
 }
 
 /**
@@ -195,8 +186,8 @@ function getOlderCars(/* code here */) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
+function getGermanCars(arr) {
+
 }
 
 /**
