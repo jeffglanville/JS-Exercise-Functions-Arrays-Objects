@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ⭐️ Example Challenge start ⭐️
 
 /**
@@ -116,8 +117,11 @@ function getCarInfoByIndex(arr, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo() {
-
+function getLastCarInfo(array) {
+  for (let i = 0; i < array.length; i++){
+    const car = array.lastIndexOf(array);
+    return `This is a ${car.car_make} ${car.car_model}`;
+  }
 }
 /**
  * ### Challenge `getCarInfoById`
@@ -131,8 +135,13 @@ function getLastCarInfo() {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(arr,id) {
-  car_
+function getCarInfoById(arr, id) {
+  for(let i = 0; i < arr.length; i++){
+    if (arr[i].id = id){
+      let car = arr[i];
+      return `This is a ${car.car_make} ${car.car_model}`;
+    }
+  }
 }
 
 /**
@@ -143,8 +152,8 @@ function getCarInfoById(arr,id) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
-function sortCarInventory(/* code here */) {
-  /* code here */
+function sortCarInventory(array) {
+
 }
 
 /**
@@ -156,7 +165,7 @@ function sortCarInventory(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears() {
+function getModelYears(array) {
 
 }
 /**
@@ -171,7 +180,7 @@ function getModelYears() {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars( {
+function getOlderCars(array, num1) {
 
 }
 
@@ -186,8 +195,8 @@ function getOlderCars( {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(arr) {
-
+function getGermanCars(/* code here */) {
+  /* code here */
 }
 
 /**
