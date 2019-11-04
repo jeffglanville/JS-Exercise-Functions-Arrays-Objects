@@ -154,8 +154,9 @@ function getCarInfoById(arr, id) {
 */
 function sortCarInventory(array) {
   for (let i = 0; i < array.length; i++){
-    return (i);
+
   }
+  return array.sort (car_model);
 }
 
 /**
