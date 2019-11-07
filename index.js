@@ -118,9 +118,7 @@ function getCarInfoByIndex(arr, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(array) {
-  for (let i = 0; i < array.length; i++){
 
-  }
 }
 /**
  * ### Challenge `getCarInfoById`
@@ -186,7 +184,7 @@ function getModelYears(array) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(array, a) {
+function getOlderCars(array, num) {
   const carArray = [];
   for (let i = 0; i < array.length; i++){
 
